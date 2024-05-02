@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Random User Profile App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that fetches a random user profile from the Random User Generator API and displays it in a card format as shown in the provided design.
 
-## Available Scripts
+## Functionality
 
-In the project directory, you can run:
+- Fetches a random user profile from the Random User Generator API.
+- Displays the user profile in a card format with the user's name, email, city, and country.
+- Utilizes proper CSS styling to present the user profile card in a visually appealing manner.
 
-### `npm start`
+## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![User Card](./screenshots/screenshot1.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+- Node.js installed on your machine. You can download it from [here](https://nodejs.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/zeeshan-akhter/user-card-app/
+   ```
+2. Change into the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd user-card-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Open your web browser and visit `http://localhost:3000` to view the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `axios`: For making HTTP requests to fetch user data from the API.
+- `react`: JavaScript library for building user interfaces.
+- `react-dom`: React package for working with the DOM.
+- `react-scripts`: React scripts and configurations for building and running the application.
 
-## Learn More
+## Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `public`: Contains the public assets and the HTML file where the React app is rendered.
+- `src`: Contains the source code of the React application.
+  - `components`: Contains React components, including the `Card` component.
+  - `App.js`: Main entry point of the application.
+  - `index.js`: Entry point for React rendering.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## API Used
 
-### Code Splitting
+- [Random User Generator API](https://randomuser.me/): Used to fetch random user profiles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Additional Notes
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This application was bootstrapped using `create-react-app`.
+- Proper error handling and loading states can be added for a better user experience.
+- Styling is implemented using Tailwind CSS, a utility-first CSS framework. Ensure proper setup of Tailwind CSS in your project for the styles to work correctly.
